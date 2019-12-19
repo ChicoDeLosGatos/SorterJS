@@ -12,8 +12,10 @@ You can download the updated code from http://cdn.orxatasoftware.com/js/sorter.v
 &emsp;`}`<br/>
 `);`
 <br/>
-`var test = [2,3,1];`<br/>
-`sorter.sort(test); // test => [1,2,3]`
+`var test1 = test2 = [2,3,1];`<br/>
+`sorter.sort(test1); // test1 => [1,2,3]`<br/>
+`sorter.sort(test2, true); // test2 => [3,2,1]`
+
 
 - __verbose:__ show info logs in the console.
 - __precision:__ seed value to generate random arrays for calibrate the sorter. As larger is the precision, the seed value will be longer and it will take more time to calibrate.
