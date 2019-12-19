@@ -19,4 +19,4 @@ You can download the updated code from http://cdn.orxatasoftware.com/js/sorter.v
 - __precision:__ seed value to generate random arrays for calibrate the sorter. As larger is the precision, the seed value will be longer and it will take more time to calibrate.
 - __iterations:__ the calibration will repeat _[iteration_value]_ times.
 <br/>
-Current version: v0.1
+Current version: _v0.1_
