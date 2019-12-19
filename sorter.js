@@ -115,9 +115,6 @@ function Sorter(config) {
             lg("\t" + type + "\t \t" + alg + "\t");
 
         }
-
-
-
     };
 
     function calibrateTypeArray(array) {
