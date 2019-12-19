@@ -371,7 +371,7 @@ function Sorter(config) {
 }
 
 
-Sorter.prototype.sort = function(arr) {
+Sorter.prototype.sort = function(arr, reverse) {
     var type = typeof arr[0];
     var choice = this.bestChoiceFor(type);
 
@@ -406,4 +406,6 @@ Sorter.prototype.sort = function(arr) {
             this.log("I will use quickSort");
             break;
     }
+    
+    if(reverse) arr.reverse();
 }
