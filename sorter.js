@@ -1,7 +1,14 @@
 function Sorter(config) {
-    this.verbose = (config.verbose) ? config.verbose : false;
-    this.precision = (config.precision) ? config.precision : 0.5; // max 1
-    this.iterations = (config.iterations) ? config.iterations : 1;
+    if(config){
+        this.verbose = (config.verbose) ? config.verbose : false;
+        this.precision = (config.precision) ? config.precision : 0.5; // max 1
+        this.iterations = (config.iterations) ? config.iterations : 1;
+    }else{
+        this.verbose = false;
+        this.precision = 0.5;
+        this.iterations = 1;
+    }
+    
 
     var internalChoices = [];
 
@@ -354,6 +361,7 @@ function Sorter(config) {
 
 
     function lg(text, notime) {
+        if(config)
         if (config.verbose) {
             if (notime) console.log(text);
             else console.log("[" + window.performance.now() + "]:", text);
