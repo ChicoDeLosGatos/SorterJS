@@ -6,7 +6,7 @@ You can download the updated code from http://cdn.orxatasoftware.com/js/sorter.v
 
 `var sorter = new Sorter(` <br/>
 &emsp;`{` <br/>
-&emsp;&emsp;`verbose: true, //default in true`<br/>
+&emsp;&emsp;`verbose: false, //default in false`<br/>
 &emsp;&emsp;`precision: 0.5, //default in 0.5, max 1, min 0.1`<br/>
 &emsp;&emsp;`iterations: 1 //default 1, min 1`<br/>
 &emsp;`}`<br/>
